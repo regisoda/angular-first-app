@@ -1,0 +1,16 @@
+<p>Consulta USUARIOS</p>
+
+<!-- <pre>
+  {{ data | json}}
+</pre> -->
+
+
+<dx-data-grid [dataSource]="data" [showBorders]="true" keyExpr="id">
+
+  <dxi-column dataField="name" caption="Nome"></dxi-column>
+
+  <dxi-column dataField="username" caption="Usuário"></dxi-column>
+
+  <dxi-column dataField="email" caption="E-mail"></dxi-column>
+
+</dx-data-grid>

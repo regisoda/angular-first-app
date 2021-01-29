@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-first-app';
+
+
+  title = 'FIRST APP';
+
+  actionTeste() {
+    this.title = "TESTE";
+  }
+
+  actionTeste2(e: any) {
+    console.log('actionTeste2', e);
+
+    this.title = e.texto;
+  }
 }
